@@ -1,37 +1,66 @@
-// Что такое переменная
-let a = 1;
-console.log(a);
+// Number - числа
+// 1. Целые числа
+// 2. Дробные числа
+let = myAge = 30;
+let = itemPrice = 25000.50;
 
-// Зачем нужна переменная
+console.log(typeof 1); // определить тип переменной
 
-let myName = "Сергей"
-console.log(myName);
+// String - строка
+// 1. Двойные кавычки
+// 2. Одинарные кавычки
+// 3. Обратные кавычки
+// 4. Объединение строк - конкатенация
 
-let myAge = 30;
-console.log(myAge);
-myAge = 32
+let firstname = "Сергей";
+let lasttname = 'Киселёв';
+let myAgeText = `Мой возраст: ${myAge}`;
 
-// Способы объявить переменную var, let, const
+console.log(myAgeText);
 
-let a = 3;
-var t = 4;
-const l = 5;
+// let fullName = firstname + ' ' + lasttname;
+let fullName = `
+    Имя: ${firstname}, 
+    Фамилия ${lasttname}, 
+    Возраст: ${myAge}
+`;
 
-// Константы
+console.log(fullName);
 
-const d = 7;
 
-// Как называть переменную
 
-let sergey;
-let myName; //Camel Case
-let my_name 
+// Boolean - истина/ложь
+const ADULT_AGE = 18;
+let isAdult = myAge >= ADULT_AGE;
 
-// Почему важно давать понятные названия
+console.log(isAdult);
 
-const weekDays = 7; // число, которое везде будет использоваться после заведения юзера
-const WEEK_DAYS = 9; // число, которое будет использоваться везде и оно известно изначально
 
-    
-}
+// Сравнения
+// Строгое сравнение === (ДжаваСкрипт сначала проверяет, что совпадают типы данных и уже потом значения - считается хорошей практикой использование строгого сравнения)
+/// Нестрогое сравнение == ((ДжаваСкрипт может трансформировать разные типы данных)
+
+if (myAge === ADULT_AGE) console.log("Вам 18");
+
+
+// Null - неопределено
+let address = null; 
+
+console.log(typeof address); // БАГ ДЖАВАСКРИПТА - определяет переменную address, как объект
+
+// Undefined - не задано (не присвоено)
+let country;
+console.log(country);
+
+// Object - объекты
+
+let person = {
+    name: 'Сергей',
+    surname: 'Киселёв',
+    age: 30,
+    isAdult: true
+};
+
+console.log(person);
+
 
