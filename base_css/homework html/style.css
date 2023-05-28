@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto Slab';
+}
+a {
+    color: #FF6B00;
+}
+.header {
+    font-size: 20px;
+    line-height: 32px;
+    color: white;
+    background-color: black;
+    
+}
+.title {
+    font-size: 24pxx;
+}
+
+.professional {
+    padding-left: 15px;
+    border-style: dashed;
+    line-height: 40px;
+    border-color: red;
+}
+
+.image {
+    height: 250px;
+    width: 250px; 
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.block-spec {
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+.write-me {
+    background-color: #E5F0FF;
+    padding: 20px;
+}
+
+.form {
+    margin-bottom: 15px;
+    width: 100%;
+    line-height: 32px;
+    padding: 5px;
+    border-style: hidden;
+}
+
+.text-form {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button {
+    font-size: 14px;
+    color: #E5F0FF;
+    background-color: #0066CC;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border-style: none;
+}
